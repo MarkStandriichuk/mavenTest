@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/stmar/Desktop/test_project/src/test/java/tests/DataBaseTest.java"><classes><class name="tests.DataBaseTest"><methods><include name="assert_population_density"/><include name="assert_population_of_all_four_countries"/></methods></class></classes></test></suite>
