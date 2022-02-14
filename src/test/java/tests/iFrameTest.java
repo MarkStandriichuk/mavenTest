@@ -48,8 +48,10 @@ public class iFrameTest{
         runButton = wait.until(presenceOfElementLocated(By.id("runbtn")));
         runButton.click();
 
-        WebElement iframe = driver.findElement(By.xpath("//iframe[@src='https://www.w3schools.com']"));
-        driver.switchTo().frame(1).switchTo().frame(iframe);
+        WebElement iframe = driver.findElement(By.id("iframeResult"));
+        driver.switchTo().frame(iframe);
+        WebElement iframe2 = driver.findElement(By.xpath("//iframe[@title='W3Schools Free Online Web Tutorials']"));
+        driver.switchTo().frame(iframe2);
 
         WebElement searchField;
         searchField = wait.until(presenceOfElementLocated(By.xpath("//input[@id='sb_form_q']")));
